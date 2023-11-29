@@ -11,6 +11,13 @@
         {% endblock %}
     </head>
     <body>
+        <header>
+        <a href="{{ path('app_index') }}" class="btn btn-primary">Page Principale</a>
+        <a href="{{ path('app_prescription_index') }}" class="btn btn-primary">Les Prescriptions</a>
+        <a href="{{ path('app_indication_index') }}" class="btn btn-primary">Les Indicaions</a>
+        <a href="{{ path('app_medicament_index') }}" class="btn btn-primary">Les Medicaments</a>
+        <p> Vincent </p>
+        </header>
         {% block body %}{% endblock %}
     </body>
 </html>
