@@ -90,8 +90,6 @@ class Indication
     
     public function __toString()
     {
-        $T = $this->getLeMedicament();
-        $R = $T->__toString();
-        return $R;
+        return $this->getId();
     }
 }
